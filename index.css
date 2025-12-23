@@ -9,10 +9,12 @@ body {
 
 .wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   /* flex-direction: center; */
   /* align-items: start; */
-  background: #272b2b;
+  /* background: #272b2b; */
+  /* object-fit: cover; */
   background: linear-gradient(
     90deg,
     rgba(39, 43, 43, 1) 0%,
@@ -26,6 +28,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  overflow: auto;
 }
 
 .main-container {
@@ -124,6 +127,8 @@ body {
 
 @media screen and (max-width: 600px) {
   .wrapper {
-    flex-direction: column;
+    /* align-items: center; */
+
+    /* flex-direction: column; */
   }
 }
